@@ -2,7 +2,7 @@
   "name": "mi-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Afranco1202.github.io/peliculas",
+  "homepage": "https://afranco1202.github.io/peliculas",
   "type": "module",
   "scripts": {
     "dev": "vite",
