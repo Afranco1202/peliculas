@@ -1,5 +1,3 @@
-import Paginator from "../components/paginator";
-import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useGetMovieFullQuery} from "../features/api/moviesApi";
 
@@ -9,7 +7,7 @@ const {id} = useParams();
 const movieId= Number(id);
 const skip = !id || Number.isNaN(movieId);
 
-const{data,isLoading,isError,error}=useGetMovieFullQuery(movieId,{skip});
+const{data,isLoading,isError}=useGetMovieFullQuery(movieId,{skip});
 
 if (skip) return <div>ID inválido</div>;
 
